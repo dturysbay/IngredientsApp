@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+    background-color: rgb(247 254 231);
+}
+
+.v-navigation-drawer{
+    z-index: 1000!important;
+}
+.v-card{
+    z-index: initial!important;
+}
