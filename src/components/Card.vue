@@ -6,10 +6,6 @@
         <v-card-text class="font-serif mb-5" style="height: 50px">
           {{title}}
         </v-card-text>
-
-<!--        <v-chip v-for="cuisineType in cuisineTypes" color="green" class="m-1">-->
-<!--          {{cuisineType}}-->
-<!--        </v-chip>-->
       </div>
 
     </v-card>
@@ -18,9 +14,10 @@
 
 </template>
 <script setup>
-defineProps({
-  title:String,
-  imgUrl:String,
-  // cuisineTypes:[String]
-})
+
+  defineProps({
+    title:String,
+    imgUrl:String,
+  })
+
 </script>

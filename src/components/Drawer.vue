@@ -29,7 +29,6 @@
             {{ capitalizeFirstLetter(item.label) }}
           </v-chip>
 
-          <!--        <v-text-field v-model="searchQuery" label="Search" outlined class="mb-4"></v-text-field>-->
 
           <v-expansion-panels >
             <v-expansion-panel v-for="(category, ind) in items" :key="ind">

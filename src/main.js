@@ -1,14 +1,15 @@
 import './assets/main.css'
 import { createApp } from 'vue'
-
+import {createRouter,createWebHistory} from "vue-router";
 import 'vuetify/styles'
 import { createVuetify } from 'vuetify'
 import * as components from 'vuetify/components'
 import * as directives from 'vuetify/directives'
 import '@mdi/font/css/materialdesignicons.css'
-
 import App from './App.vue'
 import colors from 'vuetify/util/colors'
+import Home from "@/components/Home.vue";
+import RecipeDetails from "@/components/RecipeDetails.vue";
 
 const vuetify = createVuetify({
     components,
@@ -29,4 +30,16 @@ const vuetify = createVuetify({
     },
 })
 
-createApp(App).use(vuetify).mount('#app')
+// const app = createApp(App)
+
+const routes = [
+    { path:'/',name:'Home',component:Home},
+    {path:'/recipe/:id',name:'RecipeDetails',component: RecipeDetails}
+]
+
+const router = createRouter({
+    history:createWebHistory(),
+    routes
+})
+
+createApp(App).use(router).use(vuetify).mount('#app')
