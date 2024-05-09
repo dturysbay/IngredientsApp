@@ -1,24 +1,41 @@
 # ingredients-app
 
-## Project setup
+## Инструкция по запуску
+Есть два способа запустсить проект
+Для того чтобы запустить на своем компьюетер
+1. Создайте клон git repository
+```bash
+git clone https://github.com/dturysbay/IngredientsApp.git
 ```
+2. Через терминал откройте папку проекта
+```bash
 npm install
 ```
-
-### Compiles and hot-reloads for development
-```
+3. Запустите сервер
+```bash
 npm run serve
 ```
+   Или 
+   
+Вы можете посетить сайт который задеплоен на vercel 
 
-### Compiles and minifies for production
-```
-npm run build
-```
+Сайт [Ingredients app](https://ingredients-app-nine.vercel.app/).
 
-### Lints and fixes files
-```
-npm run lint
-```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Процесс разработки
+В разработке были использованы следующие технологии
+1. Vue
+2. Tailwind CSS
+3. Vuetify
+
+В проекте реализованы общий макет, поиск,детальный просмотр отправка запроса к API
+
+Чтобы сэкономить время и разработать в краткие срокит использовал 
+- Tailwind CSS готовая библиоекта для удобства работы с CSS. 
+- Vuetify библиотека с котовыми компонентами для Vue
+
+для удобства пользователя 
+- выбрал приятный для просмотра оттенок зеленого цвета 
+- все фильтры выбираются на панели который открывается слева при нажатии на кнопку фильтра
+
+разработка заняла 3 дня
